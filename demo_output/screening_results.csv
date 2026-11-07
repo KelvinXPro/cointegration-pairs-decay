@@ -1,0 +1,2 @@
+dependent,hedge_asset,return_corr,alpha,beta,n_obs,coint_stat,critical_5pct,p_value,reject_5pct,cointegrated
+AAPL,ADBE,0.8545462819986619,0.57214708524273,0.9279372130605911,1080,-6.24637349751374,-3.341798603751285,4.687383316942367e-07,True,True

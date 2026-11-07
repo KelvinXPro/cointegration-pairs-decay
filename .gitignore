@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.pytest_cache/
+.venv*/
+
+# Historical audit copies — keep locally, do not publish.
+archive/
+
+# LSEG Workspace downloads are not redistributable.
+# Keep out_of_time/data/manifest.json (SHA256 checksums) in git;
+# re-fetch the price files locally with out_of_time/fetch_lseg.py.
+out_of_time/data/*
+!out_of_time/data/manifest.json
+
+# Renamed-out files kept locally per convention
+废弃-*

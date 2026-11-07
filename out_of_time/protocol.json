@@ -1,0 +1,41 @@
+{
+  "field": "TRDPRC_1",
+  "adjustments": [
+    "exchangeCorrection",
+    "manualCorrection",
+    "CCH",
+    "CRE",
+    "RPO",
+    "RTS"
+  ],
+  "config": {
+    "train_fraction": 0.6,
+    "z_window": 60,
+    "hedge_window": 252,
+    "entry_z": 2.0,
+    "exit_z": 0.5,
+    "stop_z": 4.0,
+    "max_holding_days": 60,
+    "transaction_cost_bps": 5.0,
+    "borrow_bps": 50.0,
+    "annualization": 252
+  },
+  "min_return_corr": 0.7,
+  "pair_selection": "Most negative coint statistic among raw p < .05; BH diagnostic only.",
+  "fixed_pair": [
+    "AJG_LAST",
+    "AON_LAST"
+  ],
+  "static_alpha": 0.0171732638794202,
+  "static_beta": 0.8503639747493976,
+  "coefficient_fit_period": [
+    "2018-01-02",
+    "2019-12-11"
+  ],
+  "pre_evaluation_context_prices": 846,
+  "fixed_pair_start": "2021-03-31",
+  "new_screen_train_fraction": 0.6,
+  "core_pipeline_sha256": "763bc46268cce2cc29cda2334051a3a11f7b31bf34dccf9f8a7bc32811840d71",
+  "data_sha256": "2d11dcd8c41cab8a2e7720c7b62b268d92b8cc2dd9e196e010f19562dff7ea9c",
+  "missing_data_policy": "Original loader and pairwise overlap; retain unavailable source columns in raw panel, never replace securities or select by OOS availability."
+}

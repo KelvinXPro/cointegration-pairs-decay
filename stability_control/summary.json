@@ -1,0 +1,45 @@
+{
+  "pair": [
+    "AJG_LAST",
+    "AON_LAST"
+  ],
+  "beta_window": 252,
+  "coint_window": 126,
+  "training_full_sample_p_value": 0.002102808347348406,
+  "training_reference_beta": 0.8503639747493976,
+  "segments": [
+    {
+      "segment": "training",
+      "price_start": "2018-01-02",
+      "price_end": "2019-12-11",
+      "price_observations": 507,
+      "beta_estimates": 255,
+      "beta_min": 0.6874480601183475,
+      "beta_max": 0.9586376442471652,
+      "beta_std_ddof1": 0.05457327369488673,
+      "beta_mean": 0.7899680743424041,
+      "coint_windows": 382,
+      "coint_reject_5pct": 99,
+      "coint_reject_fraction": 0.2591623036649215,
+      "coint_p_min": 0.00014151492698770237,
+      "coint_p_max": 0.8163775821352792
+    },
+    {
+      "segment": "holdout",
+      "price_start": "2019-12-12",
+      "price_end": "2021-03-30",
+      "price_observations": 339,
+      "beta_estimates": 338,
+      "beta_min": 0.8139859563113457,
+      "beta_max": 1.5526283823831621,
+      "beta_std_ddof1": 0.1926702968459432,
+      "beta_mean": 0.9984292789750865,
+      "coint_windows": 214,
+      "coint_reject_5pct": 0,
+      "coint_reject_fraction": 0.0,
+      "coint_p_min": 0.11029744489799642,
+      "coint_p_max": 0.971449629289149
+    }
+  ],
+  "causal_attribution": "Overlapping-window rejection fractions do not identify statistical power or a causal percentage attributable to relationship change."
+}
